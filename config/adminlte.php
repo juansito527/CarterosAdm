@@ -126,7 +126,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => ' sidebar-light-primary elevation-4',
+    'classes_sidebar' => ' sidebar-light-info elevation-4',
     'classes_sidebar_nav' => 'text-dark  ',
     'classes_topnav' => 'navbar-info navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -236,7 +236,7 @@ return [
         ],
         [
             'text'        => 'Domicilios de comida',
-            'url'         => 'admin/pages',
+            'url'         => 'admin',
             'icon'        => 'fas fa-motorcycle',
             'label'       => 4,
             'label_color' => 'success',
