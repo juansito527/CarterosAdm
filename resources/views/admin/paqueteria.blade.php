@@ -4,7 +4,7 @@
 @section('title', 'Carteros | Domicilios')
 
 @section('content_header')
-    <h1 class="text-info ">Domicilios de comida</h1>
+    <h1 class="text-info ">Paqueteria</h1>
 @stop
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
@@ -17,10 +17,10 @@
             <table id="domiciliostable" class="table table-striped  " style="width:100%">
 
                 <thead>
-                <a href="{{route('adminp')}}" class="text-secondary border rounded bg-light">ACTIVOS</a><label for="" class="text-secondary mx-2"> / </label>
-                <a href="{{route('domiciliohistori')}}" class="text-secondary border rounded">HISTORIAL</a>
+                <a href="{{route('paqueteriavista')}}" class="text-secondary border rounded bg-light">ACTIVOS</a><label for="" class="text-secondary mx-2"> / </label>
+                <a href="{{route('paqueteriahistori')}}" class="text-secondary border rounded bg-light">HISTORIAL</a>
                 <tr>
-                    <th>Id servicio</th>
+                    <th>ID servicio</th>
                     <th>Cartero</th>
                     <th>Estado</th>
                     <th>Valor</th>
@@ -107,4 +107,3 @@
         });
     </script>
 @stop
-

@@ -243,14 +243,14 @@ return [
         ],
         [
             'text'        => 'Paqueteria',
-            'url'         => 'admin/pages',
+            'url'         => 'admin/paqueteria',
             'icon'        => 'fas fa-box-open',
             'label'       => 4,
             'label_color' => 'warning',
         ],
         [
             'text' => 'Carteros',
-            'url'  => '',
+            'url'  => 'admin/carteros',
             'icon' => 'fas fa-fw fa-user',
         ],
 

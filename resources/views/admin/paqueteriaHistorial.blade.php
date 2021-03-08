@@ -4,7 +4,7 @@
 @section('title', 'Carteros | Domicilios')
 
 @section('content_header')
-    <h1 class="text-info ">Domicilios de comida</h1>
+    <h1 class="text-info ">Paqueteria Historial</h1>
 @stop
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
@@ -17,54 +17,32 @@
             <table id="domiciliostable" class="table table-striped  " style="width:100%">
 
                 <thead>
-                <a href="{{route('adminp')}}" class="text-secondary border rounded bg-light">ACTIVOS</a><label for="" class="text-secondary mx-2"> / </label>
-                <a href="{{route('domiciliohistori')}}" class="text-secondary border rounded">HISTORIAL</a>
+                <a href="{{route('paqueteriavista')}}" class="text-secondary border rounded bg-light">ACTIVOS</a><label for="" class="text-secondary mx-2"> / </label>
+                <a href="{{route('paqueteriahistori')}}" class="text-secondary border rounded bg-light">HISTORIAL</a>
                 <tr>
                     <th>Id servicio</th>
                     <th>Cartero</th>
                     <th>Estado</th>
                     <th>Valor</th>
-                    <th>Tiempo Transcurrido</th>
-                    <th>Acciones</th>
+                    <th>Tiempo</th>
+                    <th>Dirección de entrega</th>
+
 
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Simon Lopez</td>
-                    <td>Por entregar</td>
-                    <td>25000</td>
-                    <td>1:05</td>
-                    <td>
-                        <button class="btn btn-primary"><i class="fas fa-comment-dots mr-2"></i>Mensaje</button>
-                        <button class="btn btn-info"><i class="fas fa-map-marked-alt mr-2"></i>Ubicacion</button>
-                    </td>
 
-                </tr>
                 <tr>
                     <td>2</td>
                     <td>Juan Hernandez</td>
-                    <td>Por entregar</td>
+                    <td>Entregado</td>
                     <td>35000</td>
-                    <td>0:35</td>
-                    <td><button class="btn btn-primary"><i class="fas fa-comment-dots mr-2"></i>Mensaje</button>
-                        <button class="btn btn-info"><i class="fas fa-map-marked-alt mr-2"></i>Ubicacion</button>
-                    </td>
+                    <td>1:35</td>
+                    <td>calle 95a #34-25</td>
+
 
                 </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mateo Sanatna</td>
-                    <td>Por entregar</td>
-                    <td>25000</td>
-                    <td>1:30</td>
-                    <td>
-                        <button class="btn btn-primary"><i class="fas fa-comment-dots mr-2"></i>Mensaje</button>
-                        <button class="btn btn-info"><i class="fas fa-map-marked-alt mr-2"></i>Ubicacion</button>
-                    </td>
 
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -107,4 +85,3 @@
         });
     </script>
 @stop
-

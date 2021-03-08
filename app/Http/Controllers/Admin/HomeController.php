@@ -14,4 +14,24 @@ class HomeController extends Controller
     public function  domicilio(){
         return view('admin.domicilios');
     }
+
+    public function domiciliohistorial(){
+        return view('admin.DomiciliosComidaHistorial');
+    }
+
+    public function  paqueteria(){
+        return view('admin.paqueteria');
+    }
+
+    public function paqueteriahistorial(){
+        return view('admin.paqueteriaHistorial');
+    }
+
+    public function carterosvista(){
+        return view('admin.Carteros');
+    }
+    public function carterosSolicitudvista(){
+        return view('admin.CarterosSolicitud');
+    }
+
 }
