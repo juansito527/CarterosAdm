@@ -34,4 +34,7 @@ class HomeController extends Controller
         return view('admin.CarterosSolicitud');
     }
 
+    public function  balancevista(){
+        return view('admin.Balance');
+    }
 }

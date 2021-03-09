@@ -9,3 +9,4 @@ Route::get("paqueteria",[HomeController::class,'paqueteria'])->name("paqueteriav
 Route::get("paqueteriaHistorial",[HomeController::class,'paqueteriahistorial'])->name("paqueteriahistori");
 Route::get("carteros",[HomeController::class,'carterosvista'])->name("carteross");
 Route::get("solicitudes",[HomeController::class,'carterosSolicitudvista'])->name("solicitudes");
+Route::get("Balance",[HomeController::class,'balancevista'])->name("Balance");

@@ -4,7 +4,10 @@
 @section('title', 'Carteros | Domicilios')
 
 @section('content_header')
-    <h1 class="text-info ">Carteros</h1>
+    <div>
+        <h1 class="text-info  text-left">Balance Domicilios</h1>
+    </div>
+
 @stop
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
@@ -12,42 +15,42 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
 @stop
 @section('content')
-    <div class="card">
-        <div class="card-body">
-            <table id="domiciliostable" class="table table-striped  " style="width:100%">
 
-                <thead>
-                <a href="{{route('carteross')}}" class="text-secondary border rounded bg-light">Usuarios</a><label for="" class="text-secondary mx-2"> / </label>
-                <a href="{{route('solicitudes')}}" class="text-secondary border rounded">Solicitudes</a>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Contacto</th>
-                    <th>Dirección</th>
-                    <th>Vehículo</th>
-                    <th>Correo</th>
-                    <th>Acciones</th>
+    <div class="row">
+            <div class="col-8 card">
+                <div class="card-body">
+                    <table id="domiciliostable" class="table table-striped" style="width:100%">
 
-                </tr>
-                </thead>
-                <tbody>
+                        <thead>
+                        <tr>
+                            <th>Mes</th>
+                            <th>Cantidad</th>
+                            <th>Dinero total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
 
-                <tr>
-                    <td>felipe perex</td>
-                    <td>301256485</td>
-                    <td>calle 85 #36-96 </td>
-                    <td>CDR55D</td>
-                    <td>feñs02@gmail.com</td>
-                    <td><button class="btn btn-danger"><i class="fas fa-address-card mr-2"></i>Documentos</button>
-                        <button class="btn btn-success"><i class="fas fa-check-circle  mr-2"></i>Aceptar</button>
-                    </td>
-
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
+                        <tr>
+                            <td>Octubre</td>
+                            <td>153</td>
+                            <td>6.598.3256 </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-3 ml-4">
+               <div class="row">
+                   <h1 class="text-secondary">Total</h1>
+               </div>
+                <div class="row">
+                    <h4 class="text-info">Cantidad :<label class="border-bottom text-dark">136</label></h4>
+                </div>
+                <div class="row">
+                    <h4 class="text-info">Dinero Total :<label class=" border-bottom text-dark">9721349</label></h4>
+                </div>
+            </div>
     </div>
-
 @stop
 
 
@@ -85,4 +88,3 @@
         });
     </script>
 @stop
-

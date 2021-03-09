@@ -268,20 +268,49 @@ return [
             'url'        => '#',
         ],
         [
-            'text'       => 'Balance',
-            'icon'       => 'fas fa-clipboard-list',
-            'url'        => '#',
+            'text' => 'balances', //Como hacer multiniveles
+            'icon' => 'fas fa-balance-scale',
+            'submenu' => [
+                [
+                    'text' => 'Balances Domicilios',
+                    'url' => 'admin/Balance',
+                    'icon' => 'fas fa-clipboard-list',
+                ],
+                [
+                    'text' => 'Balance Paqueterias ',
+                    'url' => '',
+                    'icon' => 'fas fa-clipboard-list',
+
+                        ],
+                [
+                    'text'=>'Utilidades',
+                    'icon'=>'fas fa-cube',
+                    'submenu' => [
+                        [
+                            'text' => 'utilidades Domicilios',
+                            'url' => '',
+                            'icon' => 'fas fa-clipboard-list',
+                        ],
+                        [
+                            'text' => 'utilidades paqueteria',
+                            'url' => '',
+                            'icon' => 'fas fa-clipboard-list',
+                        ],
+                ],
+                ],
+                [
+                    'text' => 'Historial',
+                    'url' => '',
+                    'icon' => 'fas fa-calendar-alt',
+                ],
+            ],
         ],
         [
             'text'       => 'Estadisticas',
             'icon'       => 'fas fa-chart-line',
             'url'        => '#',
         ],
-        [
-            'text'       => 'Mapa',
-            'icon'       => 'fas fa-map-marked-alt',
-            'url'        => '#',
-        ],
+
     ],
 
     /*
